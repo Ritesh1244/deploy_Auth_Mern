@@ -24,7 +24,7 @@ function Home() {
     }
     const fetchProducts = async ()=>{
         try {
-            const  response = await fetch('http://localhost:3000/product', {
+            const  response = await fetch('https://deploy-auth-mern-api.vercel.app/product', {
                 method:'GET',
                 headers: {
                     "Authorization": localStorage.getItem('token')
